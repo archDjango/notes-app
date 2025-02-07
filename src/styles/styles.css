@@ -1,0 +1,80 @@
+/* Light Theme */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --card-bg: #fff;
+    --border-color: #ddd;
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --bg-color: #181818;
+    --text-color: #f4f4f4;
+    --primary-color: #ff6600;
+    --card-bg: #222;
+    --border-color: #444;
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Arial", sans-serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+  }
+  
+  /* Note Cards */
+  .note-card {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-left: 5px solid var(--primary-color);
+    text-align: left;
+  }
+  
+  /* Pagination Buttons */
+  .pagination {
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
